@@ -57,7 +57,7 @@ Cuando el estatus de la operación es 200 (exitoso), el cuerpo de la respuesta i
 
 ## Importación Certificado de Seguridad Encripción y Desencripción PAN
 
-En el envío del JSON o conjunto de parámetros de entrada, que son el insumo inicial del consumo del servicio 'Conversor' asociado a la transacción 'Depósito con Activación'. Es obligatorio cifrar el valor del PAN de la cuenta asociada al cliente por seguridad y posteriormente desemcriptarla para procesar la transacción en Postiliom.
+En el envío del JSON o conjunto de parámetros de entrada, que son el insumo inicial del consumo del servicio 'Conversor' asociado a la transacción 'Depósito con Activación'. Es obligatorio cifrar el valor del PAN de la cuenta asociada al cliente por seguridad y posteriormente desencriptarla para procesar la transacción en Postilion.
 
 Se debe importar el certificado de seguridad denominado 'SSL_OPRAP' de la siguiente forma:
 
