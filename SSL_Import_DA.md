@@ -12,12 +12,12 @@ Procesa una solicitud financiera de depósito con activación de una tarjeta.
 ```json
 {
   "TransactionId": "f4t14a9b-42b1-4dde-a45d-4568a99b1f93",
-  "Account": "YPjZbxCT3ABC2MBl74uuWvu6mBNa9BO3JUiLA9qc0+uYl4WeJ12PGgvxq3VrKVq3vRE5M0HjRNyDUKuv3+boXk1AvjLLXgB1nF1bGeZOg+ASx0euXajFE/4Kwg2bHF1QmlVakn6vZzDBanptkXIzAU9CrnCoEnrtuUgZmCwasiY=",
-  "AccountType": "11",
+  "Pan": "YPjZbxCT3ABC2MBl74uuWvu6mBNa9BO3JUiLA9qc0+uYl4WeJ12PGgvxq3VrKVq3vRE5M0HjRNyDUKuv3+boXk1AvjLLXgB1nF1bGeZOg+ASx0euXajFE/4Kwg2bHF1QmlVakn6vZzDBanptkXIzAU9CrnCoEnrtuUgZmCwasiY=",
+  "Account": "11",
   "AcquirerId": "20000000001",
   "CardAcceptor": "000000000000013",
   "CardAcceptorName": "Almacen prueba",
-  "TerminalId": "132456",
+  "TerminalId": "13245678",
   "Amount" : 99999
 }
 ```
@@ -27,8 +27,8 @@ Procesa una solicitud financiera de depósito con activación de una tarjeta.
 Campo | Tipo de dato| Descripción | Requerido
 :---: | :----------:| ----------- | :-------:
 TransactionId | string |Identificador de la transacción enviada.| [Si]
-Account | string | Número de la tarjeta que se va a activar. Se debe enviar com una cadena cifrada con certificado de confianza. | [ Si ]
-AccountType | string | Identificador del tipo de cuenta asociado a la tarjeta. Generalmente este valor lo debe "ingresar/seleccionar/establecer" el usuario y/o comercio en el punto de pago. Corresponde con una lista de valores predefinidos por Evertec Colombia. | [ Si ]
+Pan | string | Número de la tarjeta que se va a activar. Se debe enviar com una cadena cifrada con certificado de confianza. | [ Si ]
+Account | string | Identificador del tipo de cuenta asociado a la tarjeta. Generalmente este valor lo debe "ingresar/seleccionar/establecer" el usuario y/o comercio en el punto de pago. Corresponde con una lista de valores predefinidos por Evertec Colombia. | [ Si ]
 AcquirerId | string | Identificador del adquiriente que realiza la activación de la tarjeta. | [ Si ]
 CardAcceptor | string | Código del álmacen desde el cual se realiza la activación de la tarjeta. | [ Si ]
 CardAcceptorName | string | Nombre del álmacen desde el cual se realiza la activación de la tarjeta. | [ Si ]
@@ -55,7 +55,7 @@ Cuando el estatus de la operación es 200 (exitoso), el cuerpo de la respuesta i
 }
 ```
 
-### Importación Certificado de Seguridad Encripción y Desencripción PAN
+## Importación Certificado de Seguridad Encripción y Desencripción PAN
 
 En el envío del JSON o conjunto de parámetros de entrada, que son el insumo inicial del consumo del servicio 'Conversor' asociado a la transacción 'Depósito con Activación'. Es obligatorio cifrar el valor del PAN de la cuenta asociada al cliente por seguridad y posteriormente desemcriptarla para procesar la transacción en Postiliom.
 
@@ -78,7 +78,7 @@ Se debe importar el certificado de seguridad denominado 'SSL_OPRAP' de la siguie
 
 ![Iniciar búsqueda del Certificado de Seguridad - SSL](SSL_FIND_IIS4.png)
 
-5. Buscar el archivo SSL_OPRAP.pfx y seleccionarlo y luego hacer clic sobre el botón 'Abrir':
+5. Buscar el archivo SSL_OPRAP.pfx, seleccionarlo y luego hacer clic sobre el botón 'Abrir':
 
 ![Seleccionar el archivo del Certificado de Seguridad - SSL](SSL_FIND_IIS5.png)
 
