@@ -64,15 +64,15 @@ Se debe importar el certificado de seguridad denominado 'SSL_OPRAP' de la siguie
 
 1. En la barra de tareas de Windows buscar 'IIS':
 
-(SSL_FIND_IIS.png)
+![Buscar Internet Information Server - IIS](SSL_FIND_IIS.png)
 
 2. Hacer clic sobre el link 'Certificados de Servidor':
 
-(SSL_FIND_IIS_2.png)
+![Ingresar a Certificados de Servidor](SSL_FIND_IIS_2.png)
 
 3. En el panel derecho 'Acciones' hacer clic sobre el link 'Importar':
 
-(SSL_FIND_IIS_3.png)
+![Importar el Certificado de Seguridad - SSL](SSL_FIND_IIS_3.png)
 
 4. Hacer clic sobre el botón de busqueda '...':
 
