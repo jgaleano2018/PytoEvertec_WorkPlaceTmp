@@ -68,23 +68,23 @@ Se debe importar el certificado de seguridad denominado 'SSL_OPRAP' de la siguie
 
 2. Hacer clic sobre el link 'Certificados de Servidor':
 
-![Ingresar a Certificados de Servidor](SSL_FIND_IIS_2.png)
+![Ingresar a Certificados de Servidor](SSL_FIND_IIS2.png)
 
 3. En el panel derecho 'Acciones' hacer clic sobre el link 'Importar':
 
-![Importar el Certificado de Seguridad - SSL](SSL_FIND_IIS_3.png)
+![Importar el Certificado de Seguridad - SSL](SSL_FIND_IIS3.png)
 
 4. Hacer clic sobre el botón de busqueda '...':
 
-(SSL_FIND_IIS_4.png)
+![Iniciar búsqueda del Certificado de Seguridad - SSL](SSL_FIND_IIS4.png)
 
 5. Buscar el archivo SSL_OPRAP.pfx y seleccionarlo y luego hacer clic sobre el botón 'Abrir':
 
-(SSL_FIND_IIS_5.png)
+![Seleccionar el archivo del Certificado de Seguridad - SSL](SSL_FIND_IIS5.png)
 
 6. Finalmente el resultado se visualiza en la siguiente imágen:
 
-(SSL_FIND_IIS_6.png)
+![Visualizar Certificado de Seguridad - SSL](SSL_FIND_IIS6.png)
 
 
 
